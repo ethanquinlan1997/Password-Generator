@@ -1,12 +1,12 @@
-// When i click the button, I am presented with a series of prompts for password criteria.
+// When I click the button, I am presented with a series of prompts for password criteria.
 
-// When prompted for password criteria, then i select which criteria to include in the password. 
+// When prompted for password criteria, then I select which criteria to include in the password. 
 
-// When prompted for the length of the password, then i choose a length of atleast 8 characters and no more than 128 characters.
+// When prompted for the length of the password, then I choose a length of atleast 8 characters and no more than 128 characters.
 
-// When asked for character types to include in the password, Then i confirm wether or not to include lowercase, uppercase, numeric, and/or special characters.
+// When asked for character types to include in the password, Then I confirm wether or not to include lowercase, uppercase, numeric, and/or special characters.
 
-// When i answer each prompt, then my input should be validated and at least one character type should be selected.
+// When I answer each prompt, then my input should be validated and at least one character type should be selected.
 
 // When all prompts are answered, then a password is generated that matches the selected criteria.
 
@@ -16,6 +16,9 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+
+// TODO: Create variables with arrays for Symbols, Numbers, Uppercase letters, and Lowercase letters.
+
 // Prompts and variables for password criteria
 var passwordLength;
 var symbols = ["!", "#", "$", "%", "&", "'", "()", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "@", "\", "^""];
@@ -28,24 +31,25 @@ var Numbers;
 var Symbols;
 var Lowercase;
 var Uppercase;
-
 var password = []
 var passwordBlank = []
-
+// This function allows the generated password to be seen on the user's screen.
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
 
 }
 
 
 // Add event listener to generate button
+// When you 'click' the Generate Password button, the prompts will appear for user.
 generateBtn.addEventListener("click", writePassword);
 
 
-// Created function for generatePassword 
+// TODO: create a function that will go through all the possible outcomes a user may decide. Use conditional statements for all the criteria. 
+
+// Start of the function
 function generatePassword() {
   passwordLength = prompt("Enter a password length between 8 and 128")
   console.log("Password length " + passwordLength);
@@ -54,7 +58,7 @@ function generatePassword() {
   if(passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("Oops! Please enter in a number between 8 and 128!");
     console.log("Password length " + passwordLength);
-  
+  // Prompts for criteria selection for the user.
   } else { 
     Symbols = confirm("Do you want to use symbols?");
     console.log("Symbols " + Symbols);
@@ -67,9 +71,10 @@ function generatePassword() {
 
   };
  
-      // 
+      // Alert message that will appear if no options are selected.
   if (!Lowercase && !Uppercase && !Numbers && !Symbols) {
     userChoices = alert("You must select at least 1 option for a random password to generate!");
+
   // If user selects all 4 of the options, this function takes place.
   } else if (Lowercase && Uppercase && Numbers && Symbols) {
     userChoices = lowercase.concat(uppercase, numbers, symbols);
@@ -142,7 +147,7 @@ function generatePassword() {
     console.log(allChoices);
   }
 
-  // Join and r
+  // Created option for if the password is blank then no message will appear.
   var password = passwordBlank.join("");
   console.log(" " + password);
   return password;
