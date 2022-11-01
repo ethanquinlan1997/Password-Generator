@@ -8,7 +8,7 @@ This my first time using javascript to create a random password generator. My ob
 ## Application Links
 
 - GitHub Repository: https://github.com/ethanquinlan1997/Password-Generator
-- Live Website: 
+- Live Website: https://ethanquinlan1997.github.io/Password-Generator/
 
 
 ## Contribution
