@@ -67,7 +67,7 @@ function generatePassword() {
     Uppercase = confirm("Do you want to use uppercase letters?");
     console.log("Uppercase " + Uppercase);
     Lowercase = confirm("Do you want to use lowercase letters?");
-    console.log("Uppercase " + Lowercase);
+    console.log("Lowercase " + Lowercase);
 
   };
  
@@ -153,6 +153,8 @@ function generatePassword() {
   return password;
   
 }
+
+
 
 
 
