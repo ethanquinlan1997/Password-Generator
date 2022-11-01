@@ -5,6 +5,11 @@
 This my first time using javascript to create a random password generator. My objective was to get prompts to appear on screen for user's to choose a password length between 8-128 and select either numbers, symbols, lowercase and uppercase letters. Once the user selected their choices, a random password based off their criteria selected would appear in a text box. This was a challenging process of figuring out how I can use conditional statements to compensate for all options a user may decide. On the other hand, it presented me with a new learning of how I can use conditional statements in a effective way when creating things for other users.
 
 
+## Screenshots
+
+-![ethanquinlan1997 github io_Password-Generator_](https://user-images.githubusercontent.com/111590402/199145590-a9de6e72-1c47-4800-9c98-be3072292684.png)
+
+
 ## Application Links
 
 - GitHub Repository: https://github.com/ethanquinlan1997/Password-Generator
