@@ -13,7 +13,7 @@ This my first time using javascript to create a random password generator. My ob
 
 ## Contribution
 
-More than welcome to any suggestions or comments. Feel free to open a comment for Pull Requests. Refer to the "Contact Me" link to send me emails on ideas to help improve my portfolio.
+More than welcome to any suggestions or comments. Feel free to open a comment for Pull Requests. 
 
 ## License
 
